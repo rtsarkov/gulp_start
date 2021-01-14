@@ -1,0 +1,12 @@
+html, body {
+	min-width: 320px;
+	height: 100%;
+}
+.wrapper {
+	position: relative;
+	display: flex;
+	overflow: hidden;
+	flex-direction: column;
+	width: 100%;
+	min-height: 100%;
+}

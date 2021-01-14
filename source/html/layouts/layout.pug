@@ -1,0 +1,50 @@
+include ../variables.pug
+include ../sprites.pug
+doctype html
+html
+	block vars
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0, user-scalable=no")
+
+		title #{h1} - New Project
+
+		link(rel="stylesheet", href="styles.css")
+		link(rel="stylesheet", href="template_styles.css")
+		link(rel="preload", as="font", href="fonts/Roboto-Regular.woff", type="font/woff", crossorigin="anonymous")
+
+		//- <script src="js/modernizr.js"></script>
+		//- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+		script(src="js/main.min.js")
+
+	body
+		.wrapper
+			include includes/header.pug
+
+			.page
+				.container
+
+					- if (!hideBreadcrumbs)
+						include includes/breadcrumbs.pug
+
+					- if (!hideH1)
+						h1 #{h1}
+
+					="\r\n"
+					// PAGE CONTENT
+					="\r\n"
+
+					block content
+
+					="\r\n"
+					// /PAGE CONTENT
+					="\r\n"
+
+			include includes/footer.pug
+
+		// SVG SPRITES (include images/sprites.svg)
+		|
+		|
+		include ../../images/sprites.svg
+		// /SVG SPRITES

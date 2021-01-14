@@ -1,0 +1,24 @@
+.breadcrumbs {
+    line-height: 1;
+    padding: 15px 0;
+
+    &__items {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    &__item {
+        margin: 0;
+        padding: 0;
+
+        &--sep {
+            margin: 0 15px;
+        }
+    }
+
+    &__link {}
+}

@@ -1,0 +1,87 @@
+extends ../layouts/layout.pug
+
+block vars
+	- var h1 = 'Заголовок (h1)'
+
+block content
+	p
+		| Обычный шрифт: <a href="#">Lorem ipsum</a> dolor sit amet, consectetur adipisicing elit. Soluta corporis impedit amet deleniti nisi consequuntur repudiandae laborum tempora aut odio dolores sequi id doloribus quia a esse, non neque dolore!
+
+	h2 Заголовок (h2)
+	p
+		| Курсив:
+		| <i>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</i>
+		| <em>Animi eos facere quibusdam voluptas magnam nisi fugiat culpa necessitatibus ea omnis, fugit architecto laudantium minus, alias aperiam perspiciatis, debitis nostrum temporibus!</em>
+
+	h3 Заголовок (h3)
+	p
+		| Жирный:
+		| <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</b>
+		| <strong>Vel amet sequi unde obcaecati architecto reprehenderit, enim modi perspiciatis voluptatibus magnam aspernatur veritatis officia repellendus nisi recusandae vitae vero, autem voluptate.</strong>
+
+	h4 Заголовок (h4)
+	p
+		| Жирный курсив:
+		| <b><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</i></b>
+		| <strong><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</i></strong>
+		| <b><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</em></b>
+		| <strong><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</em></strong>
+		| <i><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</b></i>
+		| <i><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</strong></i>
+		| <em><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</b></em>
+		| <em><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</strong></em>
+
+	h5 Заголовок (h5)
+	ul
+		li Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+		li Consectetur culpa tenetur necessitatibus nihil illo enim, aliquam.
+		li Corrupti nobis enim nostrum voluptatem vero incidunt! Itaque.
+			ul
+				li Lorem ipsum dolor.
+				li Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae esse, pariatur, asperiores explicabo omnis totam nam at repellat quisquam voluptas consequuntur porro similique velit quae blanditiis officiis rerum animi, dolorem!
+				li Eos, ipsa, dicta?
+		li A nostrum, perspiciatis voluptatum nisi, similique itaque. Aspernatur.
+		li Doloremque, sint omnis commodi assumenda accusantium non error?
+
+	h6 Заголовок (h6)
+	ol
+		li Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+		li Consectetur culpa tenetur necessitatibus nihil illo enim, aliquam.
+		li Corrupti nobis enim nostrum voluptatem vero incidunt! Itaque.
+			ul
+				li Lorem ipsum dolor.
+				li Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae esse, pariatur, asperiores explicabo omnis totam nam at repellat quisquam voluptas consequuntur porro similique velit quae blanditiis officiis rerum animi, dolorem!
+				li Eos, ipsa, dicta?
+		li A nostrum, perspiciatis voluptatum nisi, similique itaque. Aspernatur.
+		li Doloremque, sint omnis commodi assumenda accusantium non error?
+
+	h3 Таблица (h3)
+	table
+		thead
+			tr
+				th Lorem ipsum dolor
+				th Repudiandae veritatis
+				th Qui, distinctio perspiciatis
+				th Saepe laboriosam dolor tempora
+		tbody
+			tr
+				td Lorem ipsum dolor sit amet
+				td Repellendus culpa accusamus nisi, natus
+				td Sunt voluptatem animi et quo in
+				td Laborum autem non deleniti
+			tr
+				td Repellendus culpa accusamus nisi, natus
+				td Laborum autem non deleniti
+				td Sunt voluptatem animi et quo in
+				td Lorem ipsum dolor sit amet
+			tr
+				td Repellendus culpa accusamus nisi, natus
+				td Lorem ipsum dolor, sit amet consectetur adipisicing elit
+				td Laborum autem non deleniti
+				td Sunt voluptatem animi et quo in
+		tfoot
+			tr
+				td Lorem ipsum dolor sit amet.
+				td Culpa labore quos deserunt quae.
+				td Odit atque, aliquam. Illum, quod.
+				td Sint omnis cumque, ut earum!

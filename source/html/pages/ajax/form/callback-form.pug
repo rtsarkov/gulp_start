@@ -1,0 +1,10 @@
+include ../../../variables.pug
+form.form.form--popup(action=formAction, method="post", data-form-ajax)
+	.form__body
+		.form__header Заказать звонок
+		.form__field
+			input(name="name", type="text", placeholder="Ваше имя")
+		.form__field
+			input(name="phone", type="tel", placeholder="Ваш телефон", data-mask="phone")
+		.form__footer
+			button.btn(type="submit") Отправить

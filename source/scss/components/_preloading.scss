@@ -1,0 +1,7 @@
+// используется анимированный svg, не поддерживается IE, Edge, в них просто затемнение
+.preloading {
+    width: 300px;
+    height: 100px;
+    border: 1px solid #000;
+    @include preloading(#000, #fff, .8);
+}

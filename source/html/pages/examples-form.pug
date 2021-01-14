@@ -1,0 +1,119 @@
+extends ../layouts/layout.pug
+
+block vars
+	- var h1 = 'Примеры форм и контролов'
+
+block content
+	button(data-popup-form="callback") Всплывающая форма
+
+	br
+	br
+
+	form.form(action=formAction, method="post", data-form-ajax)
+		.form__body
+
+			// Шапка формы
+
+			header.form__header Header формы
+
+			// Текстовые поля
+
+			.form__field
+				label(for="i1") Текстовое поле
+				input#i1(type="text", name="name", placeholder="Текстовое поле")
+
+			.form__field
+				label(for="i2") Текстовое поле с ошибкой
+				input#i2.is-error(type="text", placeholder="Текстовое поле с ошибкой")
+
+			.form__field
+				label(for="i3") Маска для телефона
+				input#i3(type="text", name="phone", placeholder="Маска для телефона", data-mask="phone")
+
+			// Выпадающие списки
+
+			.form__field
+				label(for="s1") Выпадающий список
+				select#s1
+					option Lorem ipsum dolor sit.
+					option Exercitationem rem quod animi.
+					option Deserunt iure, iste quis.
+					option Eligendi amet obcaecati sunt!
+					option Enim omnis fugit at.
+					option Hic facilis aliquid fuga.
+					option Esse ex voluptatem eos.
+					option Maxime aspernatur iusto repellat.
+					option Doloremque assumenda similique aut.
+					option Rem perferendis eos dolorem.
+
+			.form__field
+				label(for="s2") Выпадающий список
+				select#s2.is-error
+					option Exercitationem rem quod animi.
+					option Deserunt iure, iste quis.
+					option Eligendi amet obcaecati sunt!
+					option Enim omnis fugit at.
+					option Hic facilis aliquid fuga.
+					option Esse ex voluptatem eos.
+					option Maxime aspernatur iusto repellat.
+					option Doloremque assumenda similique aut.
+					option Rem perferendis eos dolorem.
+
+			// Блок текста
+
+			.form__field
+				label(for="t1") Текстовое поле
+				textarea#t1(rows="3")
+
+			.form__field
+				label(for="t2") Текстовое поле с ошибкой
+				textarea#t2.is-error(rows="4")
+
+			// Файлы
+
+			.form__field
+				label(for="f1") Прикрепить файл
+				input#f1(type="file")
+			.form__field
+				label(for="f1") Прикрепить файл с ошибкой
+				input#f1.is-error(type="file")
+
+			// Чекбоксы и радио
+
+			.form__field
+				label
+					input(type="checkbox" name="cc" value="1")
+					|
+					| Вариант раз
+				label
+					input(type="checkbox" name="cc" value="2")
+					|
+					| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet aliquid voluptatibus libero qui soluta commodi, illo nemo magnam quod, incidunt eius! Labore veniam voluptate ipsa possimus pariatur dolore quod ullam.
+				label
+					input.is-error(type="checkbox" name="cc" value="3")
+					|
+					| Вариант три с ошибкой
+
+			.form__field
+				label
+					input(type="radio" name="rr" value="1")
+					|
+					| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo deleniti iure consequuntur, sapiente qui optio dolorum suscipit beatae reprehenderit ea omnis, libero repellendus, nam quisquam, nobis sint. Odio, tempore, ea.
+				label
+					input.is-error(type="radio" name="rr" value="2")
+					|
+					| Вариант два с ошибкой
+				label
+					input(type="radio" name="rr" value="3")
+					|
+					| Вариант три
+
+			// Футер формы
+
+			.form__footer
+				button(type="submit") Отправит (button)
+				|
+				input(type="submit" value="Отправит (input)")
+				|
+				|
+				a.btn.is-loading(href="#") Отправить (a)

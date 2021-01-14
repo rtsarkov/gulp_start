@@ -1,0 +1,18 @@
+extends ../layouts/layout.pug
+
+block vars
+	- var h1 = 'Ссылки на страницы'
+
+block content
+	ul
+		li
+			a(href=links.home) Главная
+
+		li ---
+
+		li
+			a(href="examples-base.html") Текстовая
+		li
+			a(href="examples-form.html") Формы, контролы
+		li
+			a(href="examples-components.html") Примеры готовых блоков
